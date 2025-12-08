@@ -38,24 +38,28 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
          
          {/* Floating Action Buttons */}
          <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
-            <a 
-              href={project.github || '#'} 
-              target="_blank" 
-              rel="noreferrer"
-              className="p-2.5 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md rounded-full text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors shadow-sm border border-neutral-200/50 dark:border-neutral-700/50"
-              title="View Source on GitHub"
-            >
-              <Github size={18} />
-            </a>
-            <a 
-              href={project.link || '#'} 
-              target="_blank" 
-              rel="noreferrer"
-              className="p-2.5 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md rounded-full text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors shadow-sm border border-neutral-200/50 dark:border-neutral-700/50"
-              title="View Live Demo"
-            >
-              <ExternalLink size={18} />
-            </a>
+            {project.github && (
+              <a 
+                href={project.github} 
+                target="_blank" 
+                rel="noreferrer"
+                className="p-2.5 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md rounded-full text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors shadow-sm border border-neutral-200/50 dark:border-neutral-700/50"
+                title="View Source on GitHub"
+              >
+                <Github size={18} />
+              </a>
+            )}
+            {project.link && (
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noreferrer"
+                className="p-2.5 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md rounded-full text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors shadow-sm border border-neutral-200/50 dark:border-neutral-700/50"
+                title="View Live Demo"
+              >
+                <ExternalLink size={18} />
+              </a>
+            )}
          </div>
          
          {/* Category Badge */}
