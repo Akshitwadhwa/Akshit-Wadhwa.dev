@@ -36,6 +36,7 @@ export const projects: Project[] = [
     title: "Unibites-A all in one for food needs",
     description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
     tags: ["Kotlin", "Java", "Android", "TensorFlow"],
+    github:"https://github.com/Akshitwadhwa/Unibites--A-all-in-one-for-food-needs"
     imageUrl: "",
     category: "Android developement",
     status: "Live"

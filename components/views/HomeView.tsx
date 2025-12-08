@@ -59,8 +59,8 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
 
               <div className="flex gap-6 justify-center md:justify-start text-neutral-500 dark:text-neutral-400">
                 <SocialLink href="#" icon={Twitter} />
-                <SocialLink href="#" icon={Linkedin} />
-                <SocialLink href="#" icon={Github} />
+                <SocialLink href="www.linkedin.com/in/akshit-wadhwa-56b65b320" icon={Linkedin} />
+                <SocialLink href="https://github.com/Akshitwadhwa" icon={Github} />
                 <SocialLink href="#" icon={Mail} />
               </div>
            </div>
