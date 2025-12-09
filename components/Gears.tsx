@@ -21,7 +21,7 @@ export const Gears: React.FC = () => {
            </div>
            
            <div className="mt-8 grid grid-cols-2 gap-4">
-              <SpecItem icon={Cpu} label="Apple M3" sub="8-Core CPU" />
+              <SpecItem icon={Cpu} label="Apple M3" sub="10-Core CPU" />
               <SpecItem icon={Zap} label="16GB" sub="Unified Memory" />
               <SpecItem icon={HardDrive} label="512GB" sub="SSD Storage" />
            </div>

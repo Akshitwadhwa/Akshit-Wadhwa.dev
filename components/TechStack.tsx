@@ -30,6 +30,30 @@ export const TechStack: React.FC = () => {
         </div>
       </div>
 
+      {/* Backend Module */}
+      <div className="md:col-span-1 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 relative overflow-hidden group shadow-sm">
+        <div className="absolute bottom-0 right-0 p-6 opacity-5 dark:opacity-10 group-hover:opacity-10 dark:group-hover:opacity-20 transition-opacity">
+            <Server size={100} />
+        </div>
+        <div className="relative z-10">
+            <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-green-100 dark:bg-green-500/10 rounded-lg text-green-600 dark:text-green-400">
+                    <Server size={20} />
+                </div>
+                <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Backend</h3>
+            </div>
+            <p className="text-neutral-500 dark:text-neutral-400 mb-6 leading-relaxed">
+                Scalable server-side solutions with modern frameworks.
+            </p>
+            <div className="flex flex-wrap gap-3">
+                <TechBadge icon={Server} label="Node.js" />
+                <TechBadge icon={Code} label="Express" />
+                <TechBadge icon={Terminal} label="Python" />
+                <TechBadge icon={Zap} label="FastAPI" />
+            </div>
+        </div>
+      </div>
+
       {/* Core Module */}
       <div className="md:col-span-1 rounded-3xl bg-neutral-900 dark:bg-neutral-800 border border-neutral-800 p-6 text-white flex flex-col justify-between group relative overflow-hidden shadow-sm">
          <div className="absolute -right-4 -top-4 opacity-10 rotate-12 group-hover:rotate-0 transition-transform duration-500">
