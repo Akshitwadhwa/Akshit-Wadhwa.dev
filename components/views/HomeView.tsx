@@ -6,6 +6,7 @@ import { ProjectCard } from '../ProjectCard';
 import { PixelAvatar } from '../PixelAvatar';
 import { F1Reveal } from '../F1Reveal';
 import { TechStack } from '../TechStack';
+import { GitHubActivity } from '../GitHubActivity';
 import { Badge, SocialLink, SkillBadge, ListItem } from '../Shared';
 import { projects } from '../../data';
 
@@ -125,18 +126,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
          </div>
       </Section>
 
-      {/* GitHub Activity Placeholder */}
+      {/* GitHub Activity */}
       <Section id="activity" title="GitHub Activity" subtitle="Contributions">
-         <div className="border border-neutral-200 dark:border-neutral-800 rounded-2xl p-6 md:p-12 bg-white dark:bg-neutral-900/30 flex flex-col items-center justify-center text-center min-h-[240px] border-dashed">
-             <div className="w-16 h-16 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center mb-4">
-               <Github className="w-8 h-8 text-neutral-400" />
-             </div>
-             <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Unable to load live GitHub contributions</h3>
-             <p className="text-sm text-neutral-500 mb-6 max-w-md">Check out my profile directly for the latest open source activity and repositories.</p>
-             <a href="#" className="px-5 py-2.5 bg-neutral-900 dark:bg-neutral-800 text-white rounded-xl text-sm font-medium hover:bg-neutral-700 dark:hover:bg-neutral-700 transition-colors shadow-sm flex items-center gap-2">
-               <Github size={18} /> View on GitHub
-             </a>
-         </div>
+         <GitHubActivity username="Akshitwadhwa" />
       </Section>
 
       {/* Setup Section */}
