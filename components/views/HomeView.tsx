@@ -40,12 +40,12 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
                  Hi, I'm <MatrixText text="Akshit Wadhwa" className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-cyan-500 dark:from-emerald-400 dark:to-cyan-400" />
               </h1>
               
-              <h2 className="text-xl md:text-2xl font-medium text-neutral-600 dark:text-neutral-400 mb-8">
+              <h2 className="text-neutral-900 dark:text-neutral-100 font-semibold border-b-2 border-emerald-500/30 pb-0.5">
                  A Full Stack Web Developer and <span className="text-neutral-900 dark:text-neutral-100 font-semibold border-b-2 border-emerald-500/30 pb-0.5">DevOps Engineer</span>
               </h2>
               
               <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl mb-10 mx-auto md:mx-0 text-lg">
-                I build interactive web apps using <Badge>TypeScript</Badge>, <Badge>React</Badge>, <Badge>Next.js</Badge>, and <Badge>Bun</Badge>. With a focus on <strong className="text-neutral-900 dark:text-white">UI</strong> design. Enthusiastic about <strong className="text-neutral-900 dark:text-white">Three.js</strong>, driven by a keen eye for design.
+                I build interactive web apps using <Badge>TypeScript</Badge>, <Badge>React</Badge>, <Badge>Next.js</Badge>, and <Badge>Bun</Badge>. With a focus on <strong className="text-neutral-900 dark:text-white">UI</strong> design. Enthusiastic about <strong className="text-neutral-900 dark:text-white">Software Development </strong>, driven by a keen eye for Saas based Application
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-12">

@@ -8,20 +8,54 @@ interface ProjectCardProps {
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
-  // Helper to map tags to icons
+  // Helper to map tags to icons with colors
   const getTechIcon = (tag: string) => {
     const t = tag.toLowerCase();
-    if (t.includes('react')) return <Cpu size={16} />;
-    if (t.includes('next')) return <Layers size={16} />;
-    if (t.includes('node') || t.includes('express') || t.includes('bun')) return <Server size={16} />;
-    if (t.includes('data') || t.includes('mongo') || t.includes('firebase') || t.includes('redis') || t.includes('sql') || t.includes('appwrite')) return <Database size={16} />;
-    if (t.includes('android') || t.includes('kotlin') || t.includes('flutter') || t.includes('swift')) return <Smartphone size={16} />;
-    if (t.includes('html') || t.includes('css') || t.includes('tailwind')) return <Layout size={16} />;
-    if (t.includes('python') || t.includes('ai') || t.includes('tensor') || t.includes('torch')) return <Terminal size={16} />;
-    if (t.includes('vite')) return <Zap size={16} />;
-    if (t.includes('docker') || t.includes('cloud')) return <Box size={16} />;
-    // Fallback
-    return <span className="text-[10px] font-bold">{tag.charAt(0)}</span>;
+    
+    // React ecosystem
+    if (t.includes('react')) return <Cpu size={18} className="text-blue-500" />;
+    if (t.includes('next')) return <Layers size={18} className="text-neutral-900 dark:text-white" />;
+    if (t.includes('vite')) return <Zap size={18} className="text-purple-500" />;
+    
+    // Backend & Runtime
+    if (t.includes('node')) return <Server size={18} className="text-green-600" />;
+    if (t.includes('express')) return <Server size={18} className="text-neutral-700 dark:text-neutral-300" />;
+    if (t.includes('bun')) return <Server size={18} className="text-orange-500" />;
+    
+    // Databases
+    if (t.includes('mongo')) return <Database size={18} className="text-green-500" />;
+    if (t.includes('firebase')) return <Database size={18} className="text-yellow-500" />;
+    if (t.includes('redis')) return <Database size={18} className="text-red-500" />;
+    if (t.includes('sql') || t.includes('postgres') || t.includes('mysql')) return <Database size={18} className="text-blue-600" />;
+    if (t.includes('appwrite')) return <Database size={18} className="text-pink-500" />;
+    if (t.includes('data')) return <Database size={18} className="text-indigo-500" />;
+    
+    // Mobile
+    if (t.includes('android') || t.includes('kotlin')) return <Smartphone size={18} className="text-green-600" />;
+    if (t.includes('flutter')) return <Smartphone size={18} className="text-blue-400" />;
+    if (t.includes('swift') || t.includes('ios')) return <Smartphone size={18} className="text-orange-500" />;
+    
+    // Frontend
+    if (t.includes('html')) return <Layout size={18} className="text-orange-600" />;
+    if (t.includes('css')) return <Layout size={18} className="text-blue-500" />;
+    if (t.includes('tailwind')) return <Layout size={18} className="text-cyan-500" />;
+    if (t.includes('javascript')) return <Code size={18} className="text-yellow-500" />;
+    if (t.includes('typescript')) return <Code size={18} className="text-blue-600" />;
+    
+    // Languages & AI
+    if (t.includes('python')) return <Terminal size={18} className="text-blue-500" />;
+    if (t.includes('java')) return <Code size={18} className="text-red-600" />;
+    if (t.includes('ai') || t.includes('gemini') || t.includes('ollama')) return <Cpu size={18} className="text-purple-600" />;
+    if (t.includes('tensor') || t.includes('torch') || t.includes('pytorch')) return <Cpu size={18} className="text-orange-600" />;
+    
+    // DevOps & Cloud
+    if (t.includes('docker')) return <Box size={18} className="text-blue-600" />;
+    if (t.includes('cloud') || t.includes('aws') || t.includes('azure') || t.includes('gcp')) return <Globe size={18} className="text-blue-500" />;
+    if (t.includes('webrtc')) return <Globe size={18} className="text-green-600" />;
+    if (t.includes('arduino')) return <Cpu size={18} className="text-teal-500" />;
+    
+    // Fallback with first letter
+    return <span className="text-xs font-bold text-neutral-600 dark:text-neutral-400">{tag.charAt(0).toUpperCase()}</span>;
   };
 
   return (
@@ -89,13 +123,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             {project.tags.map((tag, idx) => (
                 <div 
                   key={idx} 
-                  className="flex items-center justify-center w-9 h-9 rounded-xl bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700/50 text-neutral-500 dark:text-neutral-400 hover:border-emerald-500/30 hover:text-emerald-500 dark:hover:text-emerald-400 hover:bg-white dark:hover:bg-neutral-800 transition-all duration-200 relative group/icon cursor-default"
+                  className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-800 dark:to-neutral-900 border border-neutral-200 dark:border-neutral-700/50 hover:border-emerald-500/40 dark:hover:border-emerald-500/40 hover:shadow-md hover:scale-110 transition-all duration-300 relative group/icon cursor-default"
                 >
                   {getTechIcon(tag)}
                   {/* Tooltip */}
-                  <span className="absolute -top-9 left-1/2 -translate-x-1/2 px-2 py-1 bg-neutral-800 text-white text-[10px] rounded opacity-0 group-hover/icon:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10 shadow-lg font-medium">
+                  <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-neutral-900 dark:bg-neutral-800 text-white text-[11px] rounded-lg opacity-0 group-hover/icon:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10 shadow-xl font-medium border border-neutral-700">
                     {tag}
-                    <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 border-l-4 border-r-4 border-t-4 border-transparent border-t-neutral-800"></span>
+                    <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 border-l-4 border-r-4 border-t-4 border-transparent border-t-neutral-900 dark:border-t-neutral-800"></span>
                   </span>
                 </div>
             ))}
