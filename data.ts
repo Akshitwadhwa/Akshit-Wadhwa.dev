@@ -35,17 +35,28 @@ export const projects: Project[] = [
   {
     title: "Unibites-A all in one for food needs",
     description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
-    tags: ["Kotlin", "Java", "Android", "TensorFlow"],
+    tags: ["Kotlin", "Java", "Android", "Firebase", "MongoDB"],
     github:"https://github.com/Akshitwadhwa/Unibites--A-all-in-one-for-food-needs",
     imageUrl: "",
     category: "Android developement",
     status: "Live"
   },
   {
+    title: "Sign-2-Speech",
+    description: "A comprehensive application for real-time sign language recognition, text-to-speech, speech-to-text, and emotion detection. ",
+    tags: ["React", "Node.js", "TensorFlow", "Firebase", "Python 3.11"],
+    github:"https://github.com/Akshitwadhwa/SIGN-2-SPEECH",
+    imageUrl: "",
+    category: "Software Development",
+    status: "Live"
+  },
+
+  {
     title: "Event Management Platform",
     description: "Comprehensive platform for managing events, including ticketing, scheduling, and attendee engagement.",
     tags: ["HTML", "CSS", "Javascript", "MongoDB", "Express.JS"],
     imageUrl: "",
+    github:"",
     category: "Web Development",
     status: "Live"
   },
@@ -54,6 +65,7 @@ export const projects: Project[] = [
     description: "A modern , responsive web platform designed to help creators and businesses master short-form content.",
     tags: ["HTML", "CSS", "Node.js", "Javascript", "Firebase"],
     imageUrl: "",
+    github:"",
     category: "Data Analytics",
     status: "Live"
   },
@@ -70,6 +82,7 @@ export const projects: Project[] = [
     description: "Internship Website For Enercore Private Limited",
     tags: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
     imageUrl: "",
+    github: "",
     category: "IoT & Hardware",
     status: "Prototype"
   },
