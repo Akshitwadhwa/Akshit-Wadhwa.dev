@@ -50,6 +50,14 @@ export const projects: Project[] = [
     category: "Software Development",
     status: "Live"
   },
+  {
+    title: "Maitre -- Astronauts Pen Pal",
+    description: "A complete voice-to-voice AI psychological support system for astronauts on the International Space Station, featuring evidence-based interventions and operational assistance.",
+    tags: ["Ollama", "Gemini", "Python", "Pytorch", "CloudFlare"],
+    imageUrl: "",
+    category: "Backend Development",
+    status: "Live"
+  },
 
   {
     title: "Event Management Platform",
@@ -85,15 +93,8 @@ export const projects: Project[] = [
     github: "",
     category: "IoT & Hardware",
     status: "Prototype"
-  },
-  {
-    title: "Maitre -- Astronauts Pen Pal",
-    description: "A complete voice-to-voice AI psychological support system for astronauts on the International Space Station, featuring evidence-based interventions and operational assistance.",
-    tags: ["Ollama", "Gemini", "Python", "Pytorch", "CloudFlare"],
-    imageUrl: "",
-    category: "Backend Development",
-    status: "Live"
   }
+
 ];
 
 export const certificates: Certificate[] = [
