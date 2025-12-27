@@ -2,11 +2,11 @@ import { Experience, Project, NavItem, Certificate } from './types';
 
 export const experiences: Experience[] = [
   {
-    role: "Founding Frontend Engineer",
-    company: "Stealth Startup",
-    period: "August 2025 - Present",
-    location: "United States (Remote)",
-    current: true,
+    role: "Full stack Developer",
+    company: "Enercore Pvt Limited",
+    period: "May 2025- July 2025",
+    location: "Noida, India (On-Site)",
+    current: false,
     description: [
       "Architected and developed the complete frontend infrastructure for the platform, a comprehensive solution for creating and managing promotional campaigns.",
       "Led a comprehensive codebase refactoring initiative that improved maintainability, scalability, and development velocity across the entire platform.",
