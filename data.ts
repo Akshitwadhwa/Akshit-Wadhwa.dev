@@ -17,9 +17,9 @@ export const experiences: Experience[] = [
   },
   {
     role: "Backend Developer Intern",
-    company: "Upsurge Labs",
-    period: "June 2025 - July 2025",
-    location: "Bangalore, India (On-Site)",
+    company: "Blupine Technologies",
+    period: "June 2025 - Dec 2025",
+    location: "Hybrid , India",
     current: false,
     description: [
       "Backend development for Bhindi.io, a flagship product of Upsurge Labs, focusing on core infrastructure and agent development.",
