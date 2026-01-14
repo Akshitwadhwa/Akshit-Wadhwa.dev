@@ -62,7 +62,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
                 <SocialLink href="#" icon={Twitter} />
                 <SocialLink href="www.linkedin.com/in/akshit-wadhwa-56b65b320" icon={Linkedin} />
                 <SocialLink href="https://github.com/Akshitwadhwa" icon={Github} />
-                <SocialLink href="#" icon={Mail} />
+                <SocialLink href="Akshitwadhwa06@gmail.com" icon={Mail} />
               </div>
            </div>
            
@@ -113,13 +113,14 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
             <div className="flex-1">
                <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-3">Akshit Wadhwa</h3>
                <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-                  I'm a Full Stack web developer and DevOps engineer focused on building scalable web applications. I love exploring new technologies and contributing to open source.
+                  I'm a Full Stack web developer and Software engineer focused on building scalable web applications. I love exploring new technologies and contributing to open source.Keen eye for Saas based Application Development and Interactive UI Designs.
                </p>
                <div className="flex flex-wrap gap-3">
                   <SkillBadge icon={Cpu} name="React" />
                   <SkillBadge icon={Layers} name="Next.js" />
                   <SkillBadge icon={Terminal} name="DevOps" />
                   <SkillBadge icon={Database} name="Postgres" />
+                  <SkillBadge icon={Database} name="Firebase" />
                   <SkillBadge icon={Coffee} name="Java" />
                </div>
             </div>
