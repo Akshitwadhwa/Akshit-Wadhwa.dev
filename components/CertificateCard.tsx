@@ -7,8 +7,17 @@ interface CertificateCardProps {
 }
 
 export const CertificateCard: React.FC<CertificateCardProps> = ({ certificate }) => {
+  const handleClick = () => {
+    if (certificate.certificateUrl) {
+      window.open(certificate.certificateUrl, '_blank');
+    }
+  };
+
   return (
-    <div className="group flex flex-col gap-3">
+    <div 
+      className={`group flex flex-col gap-3 ${certificate.certificateUrl ? 'cursor-pointer' : ''}`}
+      onClick={handleClick}
+    >
       {/* Image Container */}
       <div className="aspect-[4/3] w-full bg-neutral-900 border border-neutral-800 relative flex items-center justify-center overflow-hidden group-hover:border-neutral-700 transition-colors">
         {certificate.imageUrl ? (

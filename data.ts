@@ -102,25 +102,29 @@ export const certificates: Certificate[] = [
     title: "3X Hacktoberfest Participant",
     issuer: "Hacktoberfest",
     date: "2025-10-10",
-    imageUrl: " "
+    imageUrl: " ",
+    certificateUrl: "https://hacktoberfest.com/certificates"
   },
   {
     title: "Enercore Completion Certificate",
     issuer: "Enercore Private Limited",
     date: "2025-07-010",
-    imageUrl: "/Assests/Logo/Certificate-1.png"
+    imageUrl: "/Assests/Logo/Certificate-1.png",
+    certificateUrl: "https://drive.google.com/file/d/1w63ZZkYC0jS6-Wns94ETyPFDEFqoEJLr/view?usp=sharing"
   },
   {
     title: "Example Certificate 2",
     issuer: "Example Issuer",
     date: "2023-08-01",
-    imageUrl: ""
+    imageUrl: "",
+    certificateUrl: "https://example.com/certificate2"
   },
   {
     title: "SSoC Participation Certificate",
     issuer: "SSoC",
     date: "2025-10-10",
-    imageUrl: ""
+    imageUrl: "",
+    certificateUrl: "https://ssoc.dev/certificates"
   }
 ];
 
