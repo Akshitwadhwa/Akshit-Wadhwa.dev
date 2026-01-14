@@ -26,6 +26,7 @@ export interface Certificate {
   issuer: string;
   date: string;
   imageUrl?: string;
+  certificateUrl?: string;
 }
 
 export interface NavItem {
