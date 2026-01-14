@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
       "Integrated and optimized backend API connections, implementing efficient data fetching strategies and error handling mechanisms.",
       "Enhanced user experience and interface design through implementation of consistent design systems."
     ],
-    logo: "https://api.dicebear.com/7.x/identicon/svg?seed=Stealth"
+    logo: "/Assests/Logo/images-2.png"
   },
   {
     role: "Backend Developer Intern",
@@ -27,7 +27,7 @@ export const experiences: Experience[] = [
       "Testing agent functionality, authentication, automation, and system stability.",
       "Streamlined development workflows by optimizing internal tools."
     ],
-    logo: "https://api.dicebear.com/7.x/identicon/svg?seed=Upsurge"
+    logo: "/Assests/Logo/images-.png"
   }
 ];
 
