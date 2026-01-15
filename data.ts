@@ -102,7 +102,7 @@ export const certificates: Certificate[] = [
     title: "3X Hacktoberfest Participant",
     issuer: "Hacktoberfest",
     date: "2025-10-10",
-    imageUrl: " ",
+    imageUrl: " /Assests/Logo/Hacktoberfest.png",
     certificateUrl: "https://hacktoberfest.com/certificates"
   },
   {
