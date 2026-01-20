@@ -6,11 +6,13 @@ import { GearsView } from './components/views/GearsView';
 import { WorkView } from './components/views/WorkView';
 import { ProjectsView } from './components/views/ProjectsView';
 import { CertificatesView } from './components/views/CertificatesView';
+import { SplashScreen } from './components/SplashScreen';
 import { navLinks } from './data';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [currentView, setCurrentView] = useState<'home' | 'gears' | 'work' | 'projects' | 'certificates'>('home');
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
     if (darkMode) {
@@ -26,7 +28,12 @@ const App: React.FC = () => {
   }, [currentView]);
 
   const toggleTheme = () => setDarkMode(!darkMode);
+// Show splash screen on first visit
+  if (showSplash) {
+    return <SplashScreen onComplete={() => setShowSplash(false)} />;
+  }
 
+  
   return (
     <div className="min-h-screen flex flex-col selection:bg-emerald-500/30 bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300">
       
