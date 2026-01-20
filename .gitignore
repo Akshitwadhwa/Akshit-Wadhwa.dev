@@ -48,9 +48,6 @@ coverage
 Thumbs.db
 Desktop.ini
 
-# Email configuration (contains sensitive API keys)
-components/ContactForm.tsx
-
 # TypeScript
 *.tsbuildinfo
 
