@@ -13,6 +13,14 @@ const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [currentView, setCurrentView] = useState<'home' | 'gears' | 'work' | 'projects' | 'certificates'>('home');
   const [showSplash, setShowSplash] = useState(true);
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    // Set dark mode immediately
+    document.documentElement.classList.add('dark');
+    // Mark as ready to show splash screen
+    setIsReady(true);
+  }, []);
 
   useEffect(() => {
     if (darkMode) {
@@ -28,12 +36,11 @@ const App: React.FC = () => {
   }, [currentView]);
 
   const toggleTheme = () => setDarkMode(!darkMode);
-// Show splash screen on first visit
-  if (showSplash) {
-    return <SplashScreen onComplete={() => setShowSplash(false)} />;
-  }
 
-  
+  // Show splash screen on first visit
+  if (!isReady || showSplash) {
+    return isReady ? <SplashScreen onComplete={() => setShowSplash(false)} /> : null;
+  }
   return (
     <div className="min-h-screen flex flex-col selection:bg-emerald-500/30 bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300">
       
