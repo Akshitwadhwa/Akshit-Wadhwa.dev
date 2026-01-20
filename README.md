@@ -79,7 +79,6 @@ I'm a passionate **Full Stack Developer** and **Software Engineer** focused on b
 - Integrated and optimized backend API connections with efficient data fetching
 
 **Backend Developer Intern** @ Blupine Technologies *(June 2025 - Dec 2025)*
-- Backend development for Bhindi.io, focusing on core infrastructure
 - Engineered and deployed multiple high-performance agents
 - Streamlined development workflows by optimizing internal tools
 
