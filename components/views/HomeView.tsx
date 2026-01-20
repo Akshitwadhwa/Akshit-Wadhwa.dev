@@ -7,6 +7,7 @@ import { PixelAvatar } from '../PixelAvatar';
 import { F1Reveal } from '../F1Reveal';
 import { TechStack } from '../TechStack';
 import { GitHubActivity } from '../GitHubActivity';
+import { ContactForm } from '../ContactForm';
 import { Badge, SocialLink, SkillBadge, ListItem } from '../Shared';
 import { projects } from '../../data';
 
@@ -50,16 +51,18 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-12">
-                <a href="#" className="group flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 rounded-xl font-semibold hover:opacity-90 transition-all shadow-lg hover:shadow-xl">
+                <a href="https://drive.google.com/file/d/17F97OCyz-lS1PfeLCXqdfPxB3qQFLsdy/view?usp=sharing" className="group flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 rounded-xl font-semibold hover:opacity-90 transition-all shadow-lg hover:shadow-xl">
                   <FileText size={18} className="group-hover:-translate-y-0.5 transition-transform" /> Resume / CV
                 </a>
-                <a href="mailto:contact@akshit.dev" className="group flex items-center gap-2 px-6 py-3 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white rounded-xl font-semibold hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-all border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md">
+                <button 
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="group flex items-center gap-2 px-6 py-3 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white rounded-xl font-semibold hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-all border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md"
+                >
                   <Send size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" /> Get in touch
-                </a>
+                </button>
               </div>
 
               <div className="flex gap-6 justify-center md:justify-start text-neutral-500 dark:text-neutral-400">
-                <SocialLink href="#" icon={Twitter} />
                 <SocialLink href="www.linkedin.com/in/akshit-wadhwa-56b65b320" icon={Linkedin} />
                 <SocialLink href="https://github.com/Akshitwadhwa" icon={Github} />
                 <SocialLink href="Akshitwadhwa06@gmail.com" icon={Mail} />
@@ -166,6 +169,18 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
                   icon={Award}
                   onClick={onNavigateToCertificates}
                 />
+            </div>
+         </div>
+      </Section>
+
+      {/* Contact Section */}
+      <Section id="contact" title="Get in Touch" subtitle="Contact">
+         <div className="max-w-3xl mx-auto">
+            <p className="text-center text-neutral-600 dark:text-neutral-400 mb-8">
+              Have a project in mind or want to collaborate? Send me a message and I'll get back to you as soon as possible.
+            </p>
+            <div className="bg-white dark:bg-neutral-900/50 rounded-3xl p-8 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+              <ContactForm />
             </div>
          </div>
       </Section>
