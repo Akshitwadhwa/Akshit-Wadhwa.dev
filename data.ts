@@ -58,6 +58,15 @@ export const projects: Project[] = [
     category: "Backend Development",
     status: "Live"
   },
+  {
+    title: "Enercore Pvt Limited",
+    description: "Internship Website For Enercore Private Limited",
+    tags: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
+    imageUrl: "",
+    github: "",
+    category: "IoT & Hardware",
+    status: "Prototype"
+  },
 
   {
     title: "Event Management Platform",
@@ -85,15 +94,7 @@ export const projects: Project[] = [
     category: "Solo",
     status: "Development"
   },
-  {
-    title: "Enercore Pvt Limited",
-    description: "Internship Website For Enercore Private Limited",
-    tags: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
-    imageUrl: "",
-    github: "",
-    category: "IoT & Hardware",
-    status: "Prototype"
-  }
+  
 
 ];
 
