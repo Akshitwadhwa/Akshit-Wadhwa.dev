@@ -11,11 +11,9 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
     "Loading dependencies...",
     "Environment ready.",
     " ",
-    "Type 'npm run dev' to start the application."
+    "Choose your development mode:"
   ]);
-  const [input, setInput] = useState("");
   const [isBooting, setIsBooting] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
   const terminalRef = useRef<HTMLDivElement>(null);
 
   const executeCommand = async (cmd: string) => {
@@ -23,7 +21,6 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
     
     // Add the command line to history
     setLines(prev => [...prev, `guest@portfolio:~$ ${cmd}`]);
-    setInput("");
 
     if (cmd.trim() === 'npm run dev') {
        await delay(400);
@@ -43,11 +40,23 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
        addLog("  ➜  Network: use --host to expose");
        await delay(800);
        onComplete();
+    } else if (cmd.trim() === 'flutter run') {
+       await delay(400);
+       addLog("Launching lib/main.dart on iPhone 15 in debug mode...");
+       await delay(600);
+       addLog("Running Xcode build...");
+       await delay(800);
+       addLog("Xcode build done. 12.3s");
+       await delay(400);
+       addLog("Syncing files to device iPhone 15...");
+       await delay(600);
+       addLog("Flutter run successful.");
+       await delay(800);
+       onComplete();
     } else {
        await delay(300);
        setLines(prev => [...prev, `sh: command not found: ${cmd}`, " "]);
        setIsBooting(false);
-       setTimeout(() => inputRef.current?.focus(), 10);
     }
   };
 
@@ -56,19 +65,6 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
   }
 
   const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (isBooting) return;
-    if (e.key === 'Enter') {
-      executeCommand(input);
-    }
-  };
-
-  // Keep focus on input
-  useEffect(() => {
-    const timeout = setTimeout(() => inputRef.current?.focus(), 10);
-    return () => clearTimeout(timeout);
-  }, [isBooting, lines]);
 
   // Auto-scroll to bottom
   useEffect(() => {
@@ -95,47 +91,38 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
           {/* Body */}
           <div 
             ref={terminalRef}
-            className="flex-1 p-6 overflow-y-auto text-sm md:text-base text-neutral-300 font-mono scrollbar-hide cursor-text"
-            onClick={() => inputRef.current?.focus()}
+            className="flex-1 p-6 overflow-y-auto text-sm md:text-base text-neutral-300 font-mono scrollbar-hide cursor-text flex flex-col"
           >
-             {lines.map((line, i) => (
-                <div key={i} className="mb-1 break-words">
-                    {line.includes('npm notice') ? <span className="text-blue-400">{line}</span> : 
-                     line.includes('Local:') ? <span className="text-green-400 font-bold">{line}</span> :
-                     line.startsWith('>') ? <span className="text-neutral-500">{line}</span> :
-                     line.startsWith('guest@') ? <span><span className="text-emerald-500 mr-2">guest@portfolio:~$</span>{line.split('$ ')[1]}</span> :
-                     line}
-                </div>
-             ))}
+             <div className="flex-1">
+                {lines.map((line, i) => (
+                   <div key={i} className="mb-1 break-words">
+                       {line.includes('npm notice') ? <span className="text-blue-400">{line}</span> : 
+                        line.includes('Local:') ? <span className="text-green-400 font-bold">{line}</span> :
+                        line.startsWith('>') ? <span className="text-neutral-500">{line}</span> :
+                        line.startsWith('guest@') ? <span><span className="text-emerald-500 mr-2">guest@portfolio:~$</span>{line.split('$ ')[1]}</span> :
+                        line}
+                   </div>
+                ))}
+             </div>
              
              {!isBooting && (
-                 <div className="flex items-center">
-                    <span className="text-emerald-500 mr-2 shrink-0">guest@portfolio:~$</span>
-                    <input 
-                        ref={inputRef}
-                        type="text" 
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        onKeyDown={handleKeyDown}
-                        className="bg-transparent outline-none border-none text-white flex-1 caret-emerald-500 w-full"
-                        autoFocus
-                        autoComplete="off"
-                        spellCheck="false"
-                    />
-                 </div>
+                <div className="flex justify-center gap-6 mt-4">
+                   <button 
+                     onClick={() => executeCommand('flutter run')}
+                     className="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-mono text-sm rounded-lg transition-colors shadow-lg"
+                   >
+                     Mobile Dev
+                   </button>
+                   <button 
+                     onClick={() => executeCommand('npm run dev')}
+                     className="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-mono text-sm rounded-lg transition-colors shadow-lg"
+                   >
+                     Web Dev
+                   </button>
+                </div>
              )}
           </div>
           
-          {/* Footer Hint */}
-           <div className="px-4 py-2 bg-neutral-900 border-t border-neutral-800 text-[10px] text-neutral-600 flex justify-between items-center uppercase tracking-wider">
-             <span>Terminal Access</span>
-             <button 
-                onClick={() => executeCommand('npm run dev')}
-                className="hover:text-emerald-500 transition-colors"
-             >
-                Auto-Run System
-             </button>
-          </div>
        </div>
     </div>
   );
