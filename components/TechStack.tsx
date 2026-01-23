@@ -123,23 +123,27 @@ export const TechStack: React.FC = () => {
       </div>
 
       {/* Database Module */}
-      <div className="md:col-span-3 rounded-3xl bg-gradient-to-r from-neutral-100 to-white dark:from-neutral-900 dark:to-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 flex items-center justify-between group relative overflow-hidden shadow-sm">
-          <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6 w-full">
-               <div className="flex items-center gap-4">
+      <div className="md:col-span-3 rounded-3xl bg-gradient-to-r from-neutral-100 to-white dark:from-neutral-900 dark:to-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 group relative overflow-hidden shadow-sm">
+          <div className="relative z-10">
+               <div className="flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center text-blue-600 dark:text-blue-400">
                         <Database size={24} />
                     </div>
                     <div>
                         <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Data Management</h3>
-                        <p className="text-sm text-neutral-500 dark:text-neutral-400">Reliable storage solutions</p>
+                        <p className="text-sm text-neutral-500 dark:text-neutral-400">Reliable storage and cloud solutions</p>
                     </div>
                </div>
                
-               <div className="hidden md:flex flex-1 items-center gap-3">
-                    <div className="h-1.5 flex-1 bg-neutral-200 dark:bg-neutral-800 rounded-full overflow-hidden">
-                         <div className="h-full bg-blue-500 w-full rounded-full opacity-50"></div>
-                    </div>
-                    <span className="font-mono text-xs text-neutral-400">PostgreSQL</span>
+               <div className="flex flex-wrap gap-3">
+                    <TechBadge icon={Database} label="PostgreSQL" />
+                    <TechBadge icon={Database} label="MongoDB" />
+                    <TechBadge icon={Database} label="Redis" />
+                    <TechBadge icon={Server} label="AWS" />
+                    <TechBadge icon={Server} label="Azure" />
+                    <TechBadge icon={Server} label="GCP" />
+                    <TechBadge icon={Server} label="Firebase" />
+                    <TechBadge icon={Layers} label="Docker" />
                </div>
           </div>
       </div>

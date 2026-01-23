@@ -42,7 +42,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
        onComplete();
     } else if (cmd.trim() === 'flutter run') {
        await delay(400);
-       addLog("Launching lib/main.dart on iPhone 15 in debug mode...");
+       addLog("Launching lib/main.dart on iPhone 17 in Production mode...");
        await delay(600);
        addLog("Running Xcode build...");
        await delay(800);
