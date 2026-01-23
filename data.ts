@@ -22,7 +22,6 @@ export const experiences: Experience[] = [
     location: "Hybrid , India",
     current: false,
     description: [
-      "Backend development for Bhindi.io, a flagship product of Upsurge Labs, focusing on core infrastructure and agent development.",
       "Engineered and deployed multiple high-performance agents, enhancing product capabilities and user experience.",
       "Testing agent functionality, authentication, automation, and system stability.",
       "Streamlined development workflows by optimizing internal tools."

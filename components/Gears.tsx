@@ -1,5 +1,5 @@
 import React from 'react';
-import { Laptop, Monitor, Keyboard, Mouse, Smartphone, Cpu, HardDrive, Zap, Command } from 'lucide-react';
+import { Laptop, Monitor, Keyboard, Mouse, Smartphone, Cpu, HardDrive, Zap, Command, ExternalLink } from 'lucide-react';
 
 export const Gears: React.FC = () => {
   return (
@@ -7,6 +7,11 @@ export const Gears: React.FC = () => {
       
       {/* Primary Workstation - MacBook */}
       <div className="md:col-span-2 md:row-span-2 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-8 relative overflow-hidden group hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-300">
+        <div className="absolute top-4 right-4 z-20">
+          <a href="https://www.apple.com/macbook-air/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/80 dark:bg-neutral-800/80 rounded-lg hover:bg-white dark:hover:bg-neutral-800 transition-colors">
+            <ExternalLink size={16} className="text-neutral-600 dark:text-neutral-400" />
+          </a>
+        </div>
         <div className="absolute top-0 right-0 p-8 opacity-5 dark:opacity-10 group-hover:scale-110 group-hover:rotate-[-5deg] transition-transform duration-500 ease-out">
            <Laptop size={180} />
         </div>
@@ -30,6 +35,11 @@ export const Gears: React.FC = () => {
 
       {/* Monitor */}
       <div className="md:col-span-2 rounded-3xl bg-neutral-900 dark:bg-black border border-neutral-800 p-6 relative overflow-hidden group text-white">
+         <div className="absolute top-4 right-4 z-20">
+           <a href="https://www.benq.com/en-us/monitor/gaming/ex2710q.html" target="_blank" rel="noopener noreferrer" className="p-2 bg-neutral-800/80 rounded-lg hover:bg-neutral-800 transition-colors">
+             <ExternalLink size={16} className="text-neutral-400" />
+           </a>
+         </div>
          <div className="absolute -right-6 -bottom-6 opacity-20 group-hover:opacity-30 transition-opacity">
             <Monitor size={120} />
          </div>
@@ -59,28 +69,39 @@ export const Gears: React.FC = () => {
          </div>
          
          <div className="space-y-4">
-            <div className="flex items-center gap-4 p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-100 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors">
+            <div className="flex items-center gap-4 p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-100 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors relative">
                <div className="w-10 h-10 rounded-lg bg-neutral-200 dark:bg-neutral-700 flex items-center justify-center text-neutral-600 dark:text-neutral-300 font-bold">K3</div>
-               <div>
+               <div className="flex-1">
                   <h4 className="text-sm font-bold text-neutral-900 dark:text-white">Keychron K3 Max</h4>
                   <p className="text-xs text-neutral-500 dark:text-neutral-400">Low Profile Mechanical</p>
                </div>
+               <a href="https://www.keychron.com/products/keychron-k3-max-qmk-via-wireless-mechanical-keyboard" target="_blank" rel="noopener noreferrer" className="p-1 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded transition-colors">
+                 <ExternalLink size={14} className="text-neutral-500 dark:text-neutral-400" />
+               </a>
             </div>
             
-            <div className="flex items-center gap-4 p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-100 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors">
+            <div className="flex items-center gap-4 p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-100 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors relative">
                <div className="w-10 h-10 rounded-lg bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-500">
                   <Command size={20} />
                </div>
-               <div>
+               <div className="flex-1">
                   <h4 className="text-sm font-bold text-neutral-900 dark:text-white">Magic Keyboard</h4>
                   <p className="text-xs text-neutral-500 dark:text-neutral-400">Wireless Backup</p>
                </div>
+               <a href="https://www.apple.com/shop/product/MK2A3LL/A/magic-keyboard-us-english" target="_blank" rel="noopener noreferrer" className="p-1 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded transition-colors">
+                 <ExternalLink size={14} className="text-neutral-500 dark:text-neutral-400" />
+               </a>
             </div>
          </div>
       </div>
 
       {/* Mouse */}
-      <div className="md:col-span-1 rounded-3xl bg-gradient-to-br from-neutral-100 to-white dark:from-neutral-800 dark:to-neutral-900 border border-neutral-200 dark:border-neutral-700 p-6 flex flex-col justify-between group">
+      <div className="md:col-span-1 rounded-3xl bg-gradient-to-br from-neutral-100 to-white dark:from-neutral-800 dark:to-neutral-900 border border-neutral-200 dark:border-neutral-700 p-6 flex flex-col justify-between group relative">
+         <div className="absolute top-4 right-4 z-20">
+           <a href="https://www.logitech.com/en-us/products/mice/mx-master-3s.html" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/80 dark:bg-neutral-800/80 rounded-lg hover:bg-white dark:hover:bg-neutral-800 transition-colors">
+             <ExternalLink size={16} className="text-neutral-600 dark:text-neutral-400" />
+           </a>
+         </div>
          <div className="flex justify-end">
              <div className="p-2 bg-white dark:bg-neutral-800 rounded-full shadow-sm text-neutral-900 dark:text-white group-hover:scale-110 transition-transform">
                 <Mouse size={20} />
@@ -94,6 +115,11 @@ export const Gears: React.FC = () => {
 
       {/* Phone */}
       <div className="md:col-span-1 rounded-3xl bg-blue-50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-500/20 p-6 flex flex-col justify-between group relative overflow-hidden">
+         <div className="absolute top-4 right-4 z-20">
+           <a href="https://www.samsung.com/us/smartphones/galaxy-s23-fe/" target="_blank" rel="noopener noreferrer" className="p-2 bg-blue-100/80 dark:bg-blue-500/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-500/30 transition-colors">
+             <ExternalLink size={16} className="text-blue-600 dark:text-blue-400" />
+           </a>
+         </div>
          <div className="absolute -right-2 top-10 opacity-10 dark:opacity-20 text-blue-600 dark:text-blue-400">
             <Smartphone size={100} />
          </div>
