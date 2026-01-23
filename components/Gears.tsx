@@ -8,7 +8,7 @@ export const Gears: React.FC = () => {
       {/* Primary Workstation - MacBook */}
       <div className="md:col-span-2 md:row-span-2 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-8 relative overflow-hidden group hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-300">
         <div className="absolute top-4 right-4 z-20">
-          <a href="https://www.apple.com/macbook-air/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/80 dark:bg-neutral-800/80 rounded-lg hover:bg-white dark:hover:bg-neutral-800 transition-colors">
+          <a href="https://www.apple.com/in/shop/buy-mac/macbook-air/15-inch-sky-blue-m4-chip-with-10-core-cpu-10-core-gpu-16gb-memory-512gb#" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/80 dark:bg-neutral-800/80 rounded-lg hover:bg-white dark:hover:bg-neutral-800 transition-colors">
             <ExternalLink size={16} className="text-neutral-600 dark:text-neutral-400" />
           </a>
         </div>
@@ -36,7 +36,7 @@ export const Gears: React.FC = () => {
       {/* Monitor */}
       <div className="md:col-span-2 rounded-3xl bg-neutral-900 dark:bg-black border border-neutral-800 p-6 relative overflow-hidden group text-white">
          <div className="absolute top-4 right-4 z-20">
-           <a href="https://www.benq.com/en-us/monitor/gaming/ex2710q.html" target="_blank" rel="noopener noreferrer" className="p-2 bg-neutral-800/80 rounded-lg hover:bg-neutral-800 transition-colors">
+           <a href="https://www.amazon.in/BenQ-EX271Q-FreesSync-Adjustment-Controller/dp/B0DXTHQTGM/ref=sr_1_4?crid=V9HUDAMP18SV&dib=eyJ2IjoiMSJ9.OT9SibkCCTp28ccvUgHCxrVQ8NW_PjmwDmqHdBkW5H4VvixtikTDDmuphwlIwbp9Dq7RdPGtPzNJmXtJy1pP--QKV9426iVBgIaKr13KkDpqNX967juEA5F8lx1Zhu3hdgeiRslSSHUiiuOSkRlEcB6trP7wWB5-c-MzMpCUdlQATl9_kkAwhjYXC0uU1DjsSgsdgWryiDJJlTNOtw9_1O_TKVlWeCPiXeEiqACV6Iw.miIWDuo1ANwqhgSBexFGMsdkWKXerpY5Uof-36fKFIY&dib_tag=se&keywords=benq+27+inch+monitor+2k+gaming&qid=1769155120&sprefix=benq+27+inch+monitor+2k+ga%2Caps%2C418&sr=8-4" target="_blank" rel="noopener noreferrer" className="p-2 bg-neutral-800/80 rounded-lg hover:bg-neutral-800 transition-colors">
              <ExternalLink size={16} className="text-neutral-400" />
            </a>
          </div>
