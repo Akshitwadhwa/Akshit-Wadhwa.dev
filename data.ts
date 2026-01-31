@@ -64,8 +64,17 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
     imageUrl: "",
     github: "",
-    category: "Software Development",
+    category: "Software Development(Ineternship Project)",
     status: "Prototype"
+  },
+  {
+    title: "SpendWise - Your Own Expense Tracker",
+    description: " finance tracker app built with Flutter.Master Your Money - Track your expenses across different categories with an intuitive and modern UI.",
+    tags: ["Flutter", "Dart", "Firebase", "Provider", "SQLite" , "REST API"],
+    imageUrl: "/Assests/Projects/SpendWise.png",
+    github:"https://github.com/Akshitwadhwa/Spendwise",
+    category: "Mobile Development",
+    status: "Live"
   },
 
   {
