@@ -35,6 +35,7 @@ export const projects: Project[] = [
     title: "Maitre -- Astronauts Pen Pal",
     description: "A complete voice-to-voice AI psychological support system for astronauts on the International Space Station, featuring evidence-based interventions and operational assistance.",
     tags: ["Ollama", "Gemini", "Python", "Pytorch", "CloudFlare"],
+    github:"https://github.com/Akshitwadhwa/Maitri-Astros-Pen-Pal",
     imageUrl: "Assests/Projects/Maitri-Astro Pen Pal.png",
     category: "AI & Machine Learning",
     status: "Live"
@@ -78,14 +79,15 @@ export const projects: Project[] = [
 
   },
   {
-    title: "Enercore Pvt Limited",
-    description: "Internship Website For Enercore Private Limited",
-    tags: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
-    imageUrl: "",
-    github: "",
-    category: "Software Development(Ineternship Project)",
-    status: "Prototype"
-  },
+        title: "Sign-2-Speech",
+        description: "A comprehensive application for real-time sign language recognition, text-to-speech, speech-to-text, and emotion detection. ",
+        tags: ["React", "Node.js", "TensorFlow", "Firebase", "Python 3.11"],
+        github:"https://github.com/Akshitwadhwa/SIGN-2-SPEECH",
+        imageUrl: "/Assests/Projects/SignToSpeech.png",
+        category: "Software Development",
+        status: "Live",
+        hostedLink: "", // Add the hosted link here, e.g., "https://sign2speech.example.com"
+      },
   {
     title: "Event Management Platform",
     description: "Comprehensive platform for managing events, including ticketing, scheduling, and attendee engagement.",
