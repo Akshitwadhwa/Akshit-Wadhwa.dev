@@ -59,15 +59,6 @@ export const projects: Project[] = [
     status: "Live"
   },
   {
-    title: "Enercore Pvt Limited",
-    description: "Internship Website For Enercore Private Limited",
-    tags: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
-    imageUrl: "",
-    github: "",
-    category: "Software Development(Ineternship Project)",
-    status: "Prototype"
-  },
-  {
     title: "SpendWise - Your Own Expense Tracker",
     description: " finance tracker app built with Flutter.Master Your Money - Track your expenses across different categories with an intuitive and modern UI.",
     tags: ["Flutter", "Dart", "Firebase", "Provider", "SQLite" , "REST API"],
@@ -76,7 +67,25 @@ export const projects: Project[] = [
     category: "Mobile Development",
     status: "Live"
   },
+  {
+    title: "RetroGroove-Focus",
+    description: "A Retro-Themed Focus Timer & Lofi Player to Boost Productivity and Relaxation.Find your flow with analog aesthetics and digital productivity.",
+    tags: ["React", "Vite", "Tailwind CSS", "Firebase", "Audio APIs", "Spotify API"],
+    imageUrl: "/Assests/Projects/RetroGroove.png",
+    github:"https://github.com/Akshitwadhwa/RetroGroove-Focus", 
+    category: "Vibe & Productivity",
+    status: "Live"
 
+  },
+  {
+    title: "Enercore Pvt Limited",
+    description: "Internship Website For Enercore Private Limited",
+    tags: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
+    imageUrl: "",
+    github: "",
+    category: "Software Development(Ineternship Project)",
+    status: "Prototype"
+  },
   {
     title: "Event Management Platform",
     description: "Comprehensive platform for managing events, including ticketing, scheduling, and attendee engagement.",
