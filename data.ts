@@ -36,7 +36,7 @@ export const projects: Project[] = [
     description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
     tags: ["Kotlin", "Java", "Android", "Firebase", "MongoDB"],
     github:"https://github.com/Akshitwadhwa/Unibites--A-all-in-one-for-food-needs",
-    imageUrl: "",
+    imageUrl: "/Assests/Projects/Unibites.png",
     category: "Android developement",
     status: "Live"
   },
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     description: "A comprehensive application for real-time sign language recognition, text-to-speech, speech-to-text, and emotion detection. ",
     tags: ["React", "Node.js", "TensorFlow", "Firebase", "Python 3.11"],
     github:"https://github.com/Akshitwadhwa/SIGN-2-SPEECH",
-    imageUrl: "",
+    imageUrl: "/Assests/Projects/SignToSpeech.png",
     category: "Software Development",
     status: "Live"
   },
@@ -53,8 +53,8 @@ export const projects: Project[] = [
     title: "Maitre -- Astronauts Pen Pal",
     description: "A complete voice-to-voice AI psychological support system for astronauts on the International Space Station, featuring evidence-based interventions and operational assistance.",
     tags: ["Ollama", "Gemini", "Python", "Pytorch", "CloudFlare"],
-    imageUrl: "",
-    category: "Backend Development",
+    imageUrl: "/Assests/Projects/Maitri-Astro Pen Pal.png",
+    category: "AI & Machine Learning",
     status: "Live"
   },
   {
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
     imageUrl: "",
     github: "",
-    category: "IoT & Hardware",
+    category: "Software Development",
     status: "Prototype"
   },
 
