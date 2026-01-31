@@ -32,14 +32,14 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    title: "Unibites-A all in one for food needs",
-    description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
-    tags: ["Kotlin", "Java", "Android", "Firebase", "MongoDB"],
-    github:"https://github.com/Akshitwadhwa/Unibites--A-all-in-one-for-food-needs",
-    imageUrl: "/Assests/Projects/Unibites.png",
-    category: "Android developement",
+    title: "Maitre -- Astronauts Pen Pal",
+    description: "A complete voice-to-voice AI psychological support system for astronauts on the International Space Station, featuring evidence-based interventions and operational assistance.",
+    tags: ["Ollama", "Gemini", "Python", "Pytorch", "CloudFlare"],
+    imageUrl: "Assests/Projects/Maitri-Astro Pen Pal.png",
+    category: "AI & Machine Learning",
     status: "Live"
   },
+  
   {
     title: "Sign-2-Speech",
     description: "A comprehensive application for real-time sign language recognition, text-to-speech, speech-to-text, and emotion detection. ",
@@ -50,11 +50,12 @@ export const projects: Project[] = [
     status: "Live"
   },
   {
-    title: "Maitre -- Astronauts Pen Pal",
-    description: "A complete voice-to-voice AI psychological support system for astronauts on the International Space Station, featuring evidence-based interventions and operational assistance.",
-    tags: ["Ollama", "Gemini", "Python", "Pytorch", "CloudFlare"],
-    imageUrl: "/Assests/Projects/Maitri-Astro Pen Pal.png",
-    category: "AI & Machine Learning",
+    title: "Unibites-A all in one for food needs",
+    description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
+    tags: ["Kotlin", "Java", "Android", "Firebase", "MongoDB"],
+    github:"https://github.com/Akshitwadhwa/Unibites--A-all-in-one-for-food-needs",
+    imageUrl: "/Assests/Projects/Unibites.png",
+    category: "Android developement",
     status: "Live"
   },
   {
