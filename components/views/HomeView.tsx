@@ -51,7 +51,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-12">
-                <a href="https://drive.google.com/file/d/17F97OCyz-lS1PfeLCXqdfPxB3qQFLsdy/view?usp=sharing" className="group flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 rounded-xl font-semibold hover:opacity-90 transition-all shadow-lg hover:shadow-xl">
+                <a href="https://drive.google.com/file/d/1Bf2fa93qrCP_U9_KSp9GUzvhBT02M8me/view?usp=sharing" className="group flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 rounded-xl font-semibold hover:opacity-90 transition-all shadow-lg hover:shadow-xl">
                   <FileText size={18} className="group-hover:-translate-y-0.5 transition-transform" /> Resume / CV
                 </a>
                 <button 
