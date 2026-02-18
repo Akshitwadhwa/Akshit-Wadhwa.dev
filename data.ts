@@ -152,6 +152,7 @@ export const certificates: Certificate[] = [
 export const navLinks: NavItem[] = [
   { label: 'Work', href: '#experience' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Resume', href: '#resume' },
   { label: 'About', href: '#about' },
   { label: 'Setup', href: '#setup' },
 ];

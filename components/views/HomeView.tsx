@@ -23,6 +23,10 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
 
   // Only show first 2 projects on home
   const featuredProjects = projects.slice(0, 2);
+  const resumeFileId = '1Bf2fa93qrCP_U9_KSp9GUzvhBT02M8me';
+  const resumeViewUrl = `https://drive.google.com/file/d/${resumeFileId}/view?usp=sharing`;
+  const resumePreviewUrl = `https://drive.google.com/file/d/${resumeFileId}/preview`;
+  const resumeDownloadUrl = `https://drive.google.com/uc?export=download&id=${resumeFileId}`;
 
   return (
     <main className="flex-1 pt-20">
@@ -51,7 +55,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-12">
-                <a href="https://drive.google.com/file/d/1Bf2fa93qrCP_U9_KSp9GUzvhBT02M8me/view?usp=sharing" className="group flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 rounded-xl font-semibold hover:opacity-90 transition-all shadow-lg hover:shadow-xl">
+                <a href={resumeViewUrl} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 rounded-xl font-semibold hover:opacity-90 transition-all shadow-lg hover:shadow-xl">
                   <FileText size={18} className="group-hover:-translate-y-0.5 transition-transform" /> Resume / CV
                 </a>
                 <button 
@@ -126,6 +130,41 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
                   <SkillBadge icon={Database} name="Firebase" />
                   <SkillBadge icon={Coffee} name="Java" />
                </div>
+            </div>
+         </div>
+      </Section>
+
+      {/* Resume Section */}
+      <Section id="resume" title="Resume" subtitle="Profile">
+         <div className="bg-white dark:bg-neutral-900/50 rounded-3xl p-6 md:p-8 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+              <p className="text-neutral-600 dark:text-neutral-400">
+                Preview my resume directly here. You can also open it in a new tab or download a copy.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={resumeViewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-xl bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 text-sm font-semibold hover:opacity-90 transition-opacity"
+                >
+                  Open Full Resume
+                </a>
+                <a
+                  href={resumeDownloadUrl}
+                  className="px-4 py-2 rounded-xl bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white border border-neutral-200 dark:border-neutral-800 text-sm font-semibold hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-950">
+              <iframe
+                title="Akshit Wadhwa Resume"
+                src={resumePreviewUrl}
+                loading="lazy"
+                className="w-full h-[70vh] min-h-[520px]"
+              />
             </div>
          </div>
       </Section>
