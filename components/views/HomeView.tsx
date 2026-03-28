@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FileText, Send, Github, Linkedin, Twitter, Mail, Database, Terminal, Layers, Coffee, Code, Globe, Award, Settings, Cpu, ArrowRight } from 'lucide-react';
+import { FileText, Send, Github, Linkedin, Mail, Database, Terminal, Layers, Coffee, Code, Globe, Award, Settings, Cpu, ArrowRight } from 'lucide-react';
 import { MatrixText } from '../MatrixText';
 import { Section } from '../Section';
 import { ProjectCard } from '../ProjectCard';
@@ -67,9 +67,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
               </div>
 
               <div className="flex gap-6 justify-center md:justify-start text-neutral-500 dark:text-neutral-400">
-                <SocialLink href="www.linkedin.com/in/akshit-wadhwa-56b65b320" icon={Linkedin} />
+                <SocialLink href="https://www.linkedin.com/in/akshit-wadhwa-56b65b320" icon={Linkedin} />
                 <SocialLink href="https://github.com/Akshitwadhwa" icon={Github} />
-                <SocialLink href="Akshitwadhwa06@gmail.com" icon={Mail} />
+                <SocialLink href="mailto:Akshitwadhwa06@gmail.com" icon={Mail} />
               </div>
            </div>
            
