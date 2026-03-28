@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Cpu, Database, Layers, Server, Terminal, Palette, Zap, Globe, Layout, Smartphone, FileCode, Hash } from 'lucide-react';
+import { Code, Cpu, Database, Layers, Server, Terminal, Palette, Zap, Globe, Layout, Smartphone, FileCode, Hash, BrainCircuit } from 'lucide-react';
 
 export const TechStack: React.FC = () => {
   return (
@@ -119,6 +119,30 @@ export const TechStack: React.FC = () => {
                   <Zap className="w-6 h-6 text-yellow-500 mb-2" />
                   <span className="text-xs font-medium dark:text-neutral-300">Bun</span>
               </div>
+          </div>
+      </div>
+
+      {/* AI Module */}
+      <div className="md:col-span-2 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 relative overflow-hidden group shadow-sm">
+          <div className="absolute top-0 right-0 p-6 opacity-5 dark:opacity-10 group-hover:opacity-10 dark:group-hover:opacity-20 transition-opacity">
+            <BrainCircuit size={120} />
+          </div>
+          <div className="relative z-10">
+            <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-cyan-100 dark:bg-cyan-500/10 rounded-lg text-cyan-600 dark:text-cyan-400">
+                    <BrainCircuit size={20} />
+                </div>
+                <h3 className="text-lg font-bold text-neutral-900 dark:text-white">AI Developer with Documented Skills</h3>
+            </div>
+            <p className="text-neutral-500 dark:text-neutral-400 mb-6 max-w-2xl leading-relaxed">
+                Building practical AI workflows, integrations, and tooling with modern model platforms and libraries.
+            </p>
+            <div className="flex flex-wrap gap-3">
+                <TechBadge icon={BrainCircuit} label="OpenAI" />
+                <TechBadge icon={Layers} label="Hugging Face Libraries" />
+                <TechBadge icon={Code} label="Claude Code" />
+                <TechBadge icon={Zap} label="Gemini" />
+            </div>
           </div>
       </div>
 
