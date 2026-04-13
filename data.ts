@@ -77,7 +77,7 @@ export const projects: Project[] = [
   },
   {
     title: "RetroGroove-Focus",
-    description: "A Retro-Themed Focus Timer & Lofi Player to Boost Productivity and Relaxation.Find your flow with analog aesthetics and digital productivity.",
+    description: "A Retro-Themed Focus Timer & Lofi Player to Boost Productivity and Relaxation. Now with integrated Spotify support for seamless music streaming. Find your flow with analog aesthetics and digital productivity.",
     tags: ["React", "Vite", "Tailwind CSS", "Firebase", "Audio APIs", "Spotify API"],
     imageUrl: retroGrooveProjectImage,
     github:"https://github.com/Akshitwadhwa/RetroGroove-Focus", 
