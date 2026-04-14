@@ -1,5 +1,5 @@
 import React from 'react';
-import { Laptop, Monitor, Keyboard, Mouse, Smartphone, Cpu, HardDrive, Zap, Command, ExternalLink } from 'lucide-react';
+import { Laptop, Monitor, Keyboard, Mouse, Smartphone, Cpu, HardDrive, Zap, Command, ExternalLink, Mic, Headphones } from 'lucide-react';
 
 export const Gears: React.FC = () => {
   return (
@@ -59,7 +59,7 @@ export const Gears: React.FC = () => {
          </div>
       </div>
 
-      {/* Keyboards Group */}
+      {/* Input Devices Group */}
       <div className="md:col-span-2 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 relative overflow-hidden group">
          <div className="flex items-center gap-3 mb-6">
             <div className="p-2 bg-neutral-100 dark:bg-neutral-800 rounded-lg text-neutral-700 dark:text-neutral-300">
@@ -89,6 +89,32 @@ export const Gears: React.FC = () => {
                   <p className="text-xs text-neutral-500 dark:text-neutral-400">Wireless Backup</p>
                </div>
                <a href="https://www.apple.com/shop/product/MK2A3LL/A/magic-keyboard-us-english" target="_blank" rel="noopener noreferrer" className="p-1 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded transition-colors">
+                 <ExternalLink size={14} className="text-neutral-500 dark:text-neutral-400" />
+               </a>
+            </div>
+
+            <div className="flex items-center gap-4 p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-100 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors relative">
+               <div className="w-10 h-10 rounded-lg bg-red-50 dark:bg-red-500/10 flex items-center justify-center text-red-600 dark:text-red-300">
+                  <Mic size={18} />
+               </div>
+               <div className="flex-1">
+                  <h4 className="text-sm font-bold text-neutral-900 dark:text-white">USB Condenser Mic</h4>
+                  <p className="text-xs text-neutral-500 dark:text-neutral-400">Crystal Clear Voice Capture</p>
+               </div>
+               <a href="https://www.logitechg.com/en-us/products/microphones/yeti-gx-gaming-microphone.988-000569.html" target="_blank" rel="noopener noreferrer" className="p-1 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded transition-colors">
+                 <ExternalLink size={14} className="text-neutral-500 dark:text-neutral-400" />
+               </a>
+            </div>
+
+            <div className="flex items-center gap-4 p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-100 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors relative">
+               <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center text-blue-600 dark:text-blue-300">
+                  <Headphones size={18} />
+               </div>
+               <div className="flex-1">
+                  <h4 className="text-sm font-bold text-neutral-900 dark:text-white">Wireless Headphones</h4>
+                  <p className="text-xs text-neutral-500 dark:text-neutral-400">Music + Deep Work Sessions</p>
+               </div>
+               <a href="https://www.sony.com/electronics/headband-headphones/wh-1000xm5" target="_blank" rel="noopener noreferrer" className="p-1 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded transition-colors">
                  <ExternalLink size={14} className="text-neutral-500 dark:text-neutral-400" />
                </a>
             </div>
