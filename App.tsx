@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomeView } from './components/views/HomeView';
@@ -6,14 +7,17 @@ import { GearsView } from './components/views/GearsView';
 import { WorkView } from './components/views/WorkView';
 import { ProjectsView } from './components/views/ProjectsView';
 import { CertificatesView } from './components/views/CertificatesView';
+import { OpenSourceView } from './components/views/OpenSourceView';
+import { StackView } from './components/views/StackView';
 import { SplashScreen } from './components/SplashScreen';
 import { navLinks } from './data';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
-  const [currentView, setCurrentView] = useState<'home' | 'gears' | 'work' | 'projects' | 'certificates'>('home');
   const [showSplash, setShowSplash] = useState(true);
   const [isReady, setIsReady] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Set dark mode immediately
@@ -30,10 +34,10 @@ const App: React.FC = () => {
     }
   }, [darkMode]);
 
-  // Scroll to top when view changes
+  // Scroll to top when the shareable URL changes.
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [currentView]);
+  }, [location.pathname]);
 
   const toggleTheme = () => setDarkMode(!darkMode);
 
@@ -47,38 +51,21 @@ const App: React.FC = () => {
       <Navbar 
         darkMode={darkMode}
         toggleTheme={toggleTheme}
-        currentView={currentView}
-        setCurrentView={setCurrentView}
         navLinks={navLinks}
       />
 
-      {currentView === 'home' && (
-        <>
-          <HomeView 
-            onNavigateToGears={() => setCurrentView('gears')} 
-            onNavigateToWork={() => setCurrentView('work')}
-            onNavigateToProjects={() => setCurrentView('projects')}
-            onNavigateToCertificates={() => setCurrentView('certificates')}
-          />
-          <Footer />
-        </>
-      )}
-      
-      {currentView === 'gears' && (
-        <GearsView onBack={() => setCurrentView('home')} />
-      )}
+      <Routes>
+        <Route path="/" element={<HomeView onNavigateToGears={() => navigate('/uses')} onNavigateToWork={() => navigate('/experience')} onNavigateToProjects={() => navigate('/projects')} onNavigateToCertificates={() => navigate('/certificates')} />} />
+        <Route path="/experience" element={<WorkView />} />
+        <Route path="/projects" element={<ProjectsView />} />
+        <Route path="/open-source" element={<OpenSourceView />} />
+        <Route path="/stack" element={<StackView />} />
+        <Route path="/uses" element={<GearsView onBack={() => navigate('/')} />} />
+        <Route path="/certificates" element={<CertificatesView onBack={() => navigate('/')} />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
 
-      {currentView === 'work' && (
-        <WorkView />
-      )}
-
-      {currentView === 'projects' && (
-        <ProjectsView />
-      )}
-
-      {currentView === 'certificates' && (
-        <CertificatesView onBack={() => setCurrentView('home')} />
-      )}
+      <Footer />
       
     </div>
   );

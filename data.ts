@@ -157,9 +157,9 @@ export const certificates: Certificate[] = [
 ];
 
 export const navLinks: NavItem[] = [
-  { label: 'Work', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Resume', href: '#resume' },
-  { label: 'About', href: '#about' },
-  { label: 'Setup', href: '#setup' },
+  { label: 'Work', href: '/experience' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Open Source', href: '/open-source' },
+  { label: 'Stack', href: '/stack' },
+  { label: 'Uses', href: '/uses' },
 ];
