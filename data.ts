@@ -39,90 +39,98 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    title: "Maitre -- Astronauts Pen Pal",
-    description: "A complete voice-to-voice AI psychological support system for astronauts on the International Space Station, featuring evidence-based interventions and operational assistance.",
-    tags: ["Ollama", "Gemini", "Python", "Pytorch", "CloudFlare"],
-    github:"https://github.com/Akshitwadhwa/Maitri-Astros-Pen-Pal",
+    title: "BudgetGurugram",
+    description: "Local-first editorial guide to affordable places, workspaces, events, and services in Gurugram — with MapLibre maps, live OpenStreetMap nearby pins, weather-aware tips, and auto-refreshed public events.",
+    tags: ["JavaScript", "MapLibre", "OpenStreetMap", "Vercel", "GitHub Actions"],
+    github: "https://github.com/Akshitwadhwa/budgetgurugram",
+    link: "https://budgetgurugram.vercel.app",
+    imageUrl: "",
+    category: "Local Discovery",
+    status: "Live"
+  },
+  {
+    title: "Pitwall Copilot",
+    description: "F1 pit-wall communication intelligence that turns driver/engineer radio into race-ready insights — team selection, cinematic cockpit UI, and concise pit commands with local fallback when the API is offline.",
+    tags: ["React", "JavaScript", "Vite", "Hugging Face", "Vercel"],
+    github: "https://github.com/Akshitwadhwa/Pitwall-Copilot",
+    link: "https://pitwall-copilot.vercel.app",
+    imageUrl: "",
+    category: "F1 / AI",
+    status: "Live"
+  },
+  {
+    title: "Note-Pilot AI",
+    description: "Full-stack academic workspace for timetables, notes, Google Classroom sync, PDF analysis, RAG over course handouts, AI study packs, and quizzes — React + Express + PostgreSQL.",
+    tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "OpenAI", "Supabase"],
+    github: "https://github.com/Akshitwadhwa/Note-Pilot-Ai",
+    imageUrl: "",
+    category: "EdTech / Full Stack",
+    status: "Live"
+  },
+  {
+    title: "CareGraph AI",
+    description: "Multimodal clinical decision support that grounds answers in local medical PDFs — text RAG, Gemini Vision lab-report understanding, FAISS retrieval, and a FastAPI + React UI.",
+    tags: ["Python", "LangChain", "Gemini", "FAISS", "FastAPI", "React"],
+    github: "https://github.com/Akshitwadhwa/Caregraph-Ai",
+    imageUrl: "",
+    category: "AI & Healthcare",
+    status: "Live"
+  },
+  {
+    title: "PitWolf",
+    description: "F1 race-strategy engine that learns overtakes from historical data, models 2026 energy deployment, and replays completed races to recommend ATTACK, SAVE, DELAY, or BOX with explainable reasons.",
+    tags: ["JavaScript", "Python", "Telemetry", "ML"],
+    github: "https://github.com/Akshitwadhwa/PitWolf",
+    imageUrl: "",
+    category: "F1 Strategy / ML",
+    status: "Development"
+  },
+  {
+    title: "Trend Scout",
+    description: "Free-first, human-in-the-loop X content workflow: discovers verified tech stories via GitHub Actions, builds a trend inbox, and drafts posts with Hermes/Telegram for manual review — never auto-posts.",
+    tags: ["Python", "GitHub Actions", "Ollama", "Telegram"],
+    github: "https://github.com/Akshitwadhwa/Trend-Scout",
+    imageUrl: "",
+    category: "Automation / AI",
+    status: "Live"
+  },
+  {
+    title: "Maitri — Astronauts' Pen Pal",
+    description: "Voice-to-voice AI psychological support system for astronauts on the ISS, with evidence-based interventions, operational assistance, and offline Llama chat via Ollama.",
+    tags: ["Ollama", "Python", "Gemini", "Pytorch"],
+    github: "https://github.com/Akshitwadhwa/Maitri-Astros-Pen-Pal",
     imageUrl: maitriProjectImage,
     category: "AI & Machine Learning",
     status: "Live"
   },
-  
   {
     title: "Sign-2-Speech",
-    description: "A comprehensive application for real-time sign language recognition, text-to-speech, speech-to-text, and emotion detection. ",
-    tags: ["React", "Node.js", "TensorFlow", "Firebase", "Python 3.11"],
-    github:"https://github.com/Akshitwadhwa/SIGN-2-SPEECH",
+    description: "Real-time sign language recognition, speech-to-sign, text-to-speech, and emotion detection — CNN webcam detection with a React frontend and Flask API backend.",
+    tags: ["React", "Node.js", "TensorFlow", "Firebase", "Python"],
+    github: "https://github.com/Akshitwadhwa/SIGN-2-SPEECH",
     imageUrl: signToSpeechProjectImage,
-    category: "Software Development",
+    category: "AI / Accessibility",
     status: "Live"
   },
   {
-    title: "Unibites-A all in one for food needs",
-    description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
-    tags: ["Kotlin", "Java", "Android", "Firebase", "MongoDB"],
-    github:"https://github.com/Akshitwadhwa/Unibites--A-all-in-one-for-food-needs",
-    imageUrl: "",
-    category: "Android developement",
-    status: "Live"
-  },
-  {
-    title: "SpendWise - Your Own Expense Tracker",
-    description: " finance tracker app built with Flutter.Master Your Money - Track your expenses across different categories with an intuitive and modern UI.",
-    tags: ["Flutter", "Dart", "Firebase", "Provider", "SQLite" , "REST API"],
+    title: "SpendWise",
+    description: "AI-powered Flutter finance tracker for expenses across categories, with Firebase, Provider, SQLite, and REST APIs behind a modern mobile UI.",
+    tags: ["Flutter", "Dart", "Firebase", "Provider", "SQLite"],
     imageUrl: spendWiseProjectImage,
-    github:"https://github.com/Akshitwadhwa/Spendwise",
+    github: "https://github.com/Akshitwadhwa/Spendwise",
     category: "Mobile Development",
     status: "Live"
   },
   {
-    title: "RetroGroove-Focus",
-    description: "A Retro-Themed Focus Timer & Lofi Player to Boost Productivity and Relaxation. Now with integrated Spotify support for seamless music streaming. Find your flow with analog aesthetics and digital productivity.",
-    tags: ["React", "Vite", "Tailwind CSS", "Firebase", "Audio APIs", "Spotify API"],
+    title: "RetroGroove Focus",
+    description: "Retro-themed focus timer and lofi player with Spotify integration — analog aesthetics meets digital productivity.",
+    tags: ["React", "Vite", "Tailwind CSS", "Firebase", "Spotify API"],
     imageUrl: retroGrooveProjectImage,
-    github:"https://github.com/Akshitwadhwa/RetroGroove-Focus", 
-    category: "Vibe & Productivity",
-    status: "Live"
-
-  },
-  {
-        title: "Sign-2-Speech",
-        description: "A comprehensive application for real-time sign language recognition, text-to-speech, speech-to-text, and emotion detection. ",
-        tags: ["React", "Node.js", "TensorFlow", "Firebase", "Python 3.11"],
-        github:"https://github.com/Akshitwadhwa/SIGN-2-SPEECH",
-        imageUrl: signToSpeechProjectImage,
-        category: "Software Development",
-        status: "Live",
-        hostedLink: "", // Add the hosted link here, e.g., "https://sign2speech.example.com"
-      },
-  {
-    title: "Event Management Platform",
-    description: "Comprehensive platform for managing events, including ticketing, scheduling, and attendee engagement.",
-    tags: ["HTML", "CSS", "Javascript", "MongoDB", "Express.JS"],
-    imageUrl: "",
-    github:"",
-    category: "Web Development",
+    github: "https://github.com/Akshitwadhwa/RetroGroove-Focus",
+    link: "https://retro-groove-focus.vercel.app",
+    category: "Productivity",
     status: "Live"
   },
-  {
-    title: "Make all stops-- Content Dashboard",
-    description: "A modern , responsive web platform designed to help creators and businesses master short-form content.",
-    tags: ["HTML", "CSS", "Node.js", "Javascript", "Firebase"],
-    imageUrl: "",
-    github:"",
-    category: "Data Analytics",
-    status: "Live"
-  },
-  {
-    title: "AeroConnect",
-    description: "Live flight tracking with up-to-the-minute departure and arrival information",
-    tags: ["React", "Vite", "Firebase", "Redis", "Docker"],
-    imageUrl: "",
-    category: "Solo",
-    status: "Development"
-  },
-  
-
 ];
 
 export const certificates: Certificate[] = [
