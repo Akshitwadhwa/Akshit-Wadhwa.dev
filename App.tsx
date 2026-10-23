@@ -12,9 +12,11 @@ import { StackView } from './components/views/StackView';
 import { SplashScreen } from './components/SplashScreen';
 import { navLinks } from './data';
 
+const SPLASH_SEEN_KEY = 'portfolio-splash-seen';
+
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
-  const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(false);
   const [isReady, setIsReady] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -22,7 +24,9 @@ const App: React.FC = () => {
   useEffect(() => {
     // Set dark mode immediately
     document.documentElement.classList.add('dark');
-    // Mark as ready to show splash screen
+    // Show splash once per browser session (skips refreshes; returns on a new visit)
+    const hasSeenSplash = sessionStorage.getItem(SPLASH_SEEN_KEY) === '1';
+    setShowSplash(!hasSeenSplash);
     setIsReady(true);
   }, []);
 
@@ -41,9 +45,14 @@ const App: React.FC = () => {
 
   const toggleTheme = () => setDarkMode(!darkMode);
 
-  // Show splash screen on first visit
+  const handleSplashComplete = () => {
+    sessionStorage.setItem(SPLASH_SEEN_KEY, '1');
+    setShowSplash(false);
+  };
+
+  // Show splash screen on first visit in this session
   if (!isReady || showSplash) {
-    return isReady ? <SplashScreen onComplete={() => setShowSplash(false)} /> : null;
+    return isReady ? <SplashScreen onComplete={handleSplashComplete} /> : null;
   }
   return (
     <div className="min-h-screen flex flex-col selection:bg-emerald-500/30 bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300">
