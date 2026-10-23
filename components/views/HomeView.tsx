@@ -10,7 +10,7 @@ import { GitHubActivity } from '../GitHubActivity';
 import { ContactForm } from '../ContactForm';
 import { Badge, SocialLink, SkillBadge, ListItem } from '../Shared';
 import { projects } from '../../data';
-import profilePhoto from '../../Assests/Profile.jpeg';
+import profilePhoto from '../../Assests/Profile.png';
 
 interface HomeViewProps {
   onNavigateToGears: () => void;

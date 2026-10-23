@@ -2,7 +2,7 @@ import React from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 import { NavItem } from '../types';
-import profilePhoto from '../Assests/Profile.jpeg';
+import profilePhoto from '../Assests/Profile.png';
 
 interface NavbarProps {
   darkMode: boolean;

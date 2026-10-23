@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePhoto from '../Assests/Profile.jpeg';
+import profilePhoto from '../Assests/Profile.png';
 
 export const PixelAvatar: React.FC = () => {
   return (
