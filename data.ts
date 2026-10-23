@@ -6,6 +6,7 @@ import maitriProjectImage from './Assests/Projects/Maitri-Astro Pen Pal.png';
 import signToSpeechProjectImage from './Assests/Projects/SignToSpeech.png';
 import spendWiseProjectImage from './Assests/Projects/SpendWise.png';
 import retroGrooveProjectImage from './Assests/Projects/RetroGroove.png';
+import budgetGurugramProjectImage from './Assests/Projects/gurugram-commons-onboarding.png';
 
 export const experiences: Experience[] = [
   {
@@ -44,7 +45,7 @@ export const projects: Project[] = [
     tags: ["JavaScript", "MapLibre", "OpenStreetMap", "Vercel", "GitHub Actions"],
     github: "https://github.com/Akshitwadhwa/budgetgurugram",
     link: "https://budgetgurugram.vercel.app",
-    imageUrl: "",
+    imageUrl: budgetGurugramProjectImage,
     category: "Local Discovery",
     status: "Live"
   },
