@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Cpu, Database, Layers, Server, Terminal, Palette, Zap, Globe, Layout, Smartphone, FileCode, Hash, BrainCircuit } from 'lucide-react';
+import { Code, Cpu, Database, Layers, Server, Terminal, Palette, Zap, Globe, Layout, Smartphone, FileCode, Hash, BrainCircuit, Map, GitBranch, Cloud } from 'lucide-react';
 
 export const TechStack: React.FC = () => {
   return (
@@ -18,12 +18,14 @@ export const TechStack: React.FC = () => {
                 <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Frontend Architecture</h3>
             </div>
             <p className="text-neutral-500 dark:text-neutral-400 mb-6 max-w-md leading-relaxed">
-                Crafting responsive, high-performance user interfaces using the modern React ecosystem.
+                Crafting responsive, high-performance interfaces — from React apps to interactive maps.
             </p>
             <div className="flex flex-wrap gap-3">
-                <TechBadge icon={Globe} label="Next.js" />
                 <TechBadge icon={Cpu} label="React" />
+                <TechBadge icon={Globe} label="Next.js" />
+                <TechBadge icon={Zap} label="Vite" />
                 <TechBadge icon={Palette} label="Tailwind CSS" />
+                <TechBadge icon={Map} label="MapLibre" />
                 <TechBadge icon={FileCode} label="HTML5" />
                 <TechBadge icon={Hash} label="CSS3" />
             </div>
@@ -43,7 +45,7 @@ export const TechStack: React.FC = () => {
                 <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Backend</h3>
             </div>
             <p className="text-neutral-500 dark:text-neutral-400 mb-6 leading-relaxed">
-                Scalable server-side solutions with modern frameworks.
+                APIs, agents, and automation backends.
             </p>
             <div className="flex flex-wrap gap-3">
                 <TechBadge icon={Server} label="Node.js" />
@@ -61,7 +63,7 @@ export const TechStack: React.FC = () => {
          </div>
          <div>
              <h3 className="text-lg font-bold mb-2">Core</h3>
-             <p className="text-neutral-400 text-sm mb-4">Type-safe & reliable code.</p>
+             <p className="text-neutral-400 text-sm mb-4">Languages I ship with.</p>
          </div>
          <div className="space-y-2">
              <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-white/10 border border-white/10 backdrop-blur-sm">
@@ -76,10 +78,22 @@ export const TechStack: React.FC = () => {
                      <span className="font-mono text-sm">JavaScript</span>
                  </div>
              </div>
+             <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-white/5 border border-white/5 backdrop-blur-sm">
+                 <div className="flex items-center gap-2">
+                     <div className="w-2 h-2 rounded-full bg-sky-400"></div>
+                     <span className="font-mono text-sm">Python</span>
+                 </div>
+             </div>
+             <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-white/5 border border-white/5 backdrop-blur-sm">
+                 <div className="flex items-center gap-2">
+                     <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
+                     <span className="font-mono text-sm">Dart</span>
+                 </div>
+             </div>
          </div>
       </div>
 
-      {/* App Development Module - NEW */}
+      {/* App Development Module */}
       <div className="md:col-span-2 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 relative overflow-hidden group shadow-sm">
           <div className="absolute top-0 right-0 p-6 opacity-5 dark:opacity-10 group-hover:opacity-10 dark:group-hover:opacity-20 transition-opacity">
             <Smartphone size={120} />
@@ -92,32 +106,42 @@ export const TechStack: React.FC = () => {
                 <h3 className="text-lg font-bold text-neutral-900 dark:text-white">App Development</h3>
             </div>
             <p className="text-neutral-500 dark:text-neutral-400 mb-6 max-w-md leading-relaxed">
-                Building cross-platform and native mobile applications.
+                Cross-platform mobile apps with Flutter and native toolchains.
             </p>
             <div className="flex flex-wrap gap-3">
                 <TechBadge icon={Layout} label="Flutter" />
+                <TechBadge icon={Code} label="Dart" />
                 <TechBadge icon={Code} label="Kotlin" />
                 <TechBadge icon={Zap} label="Swift" />
+                <TechBadge icon={Database} label="SQLite" />
             </div>
           </div>
       </div>
 
-      {/* Runtime Module */}
+      {/* Runtime / Ship Module */}
       <div className="md:col-span-1 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 flex flex-col group shadow-sm">
           <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 bg-orange-100 dark:bg-orange-500/10 rounded-lg text-orange-600 dark:text-orange-400">
-                    <Terminal size={20} />
+                    <Cloud size={20} />
                 </div>
-                <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Runtime</h3>
+                <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Ship & Ops</h3>
           </div>
           <div className="flex-1 grid grid-cols-2 gap-3">
+              <div className="flex flex-col items-center justify-center p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800 border border-neutral-100 dark:border-neutral-700 hover:border-neutral-500/50 transition-colors">
+                  <Cloud className="w-6 h-6 text-neutral-700 dark:text-neutral-200 mb-2" />
+                  <span className="text-xs font-medium dark:text-neutral-300">Vercel</span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800 border border-neutral-100 dark:border-neutral-700 hover:border-orange-500/50 transition-colors">
+                  <GitBranch className="w-6 h-6 text-orange-500 mb-2" />
+                  <span className="text-xs font-medium dark:text-neutral-300">GitHub Actions</span>
+              </div>
               <div className="flex flex-col items-center justify-center p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800 border border-neutral-100 dark:border-neutral-700 hover:border-green-500/50 transition-colors">
                   <Server className="w-6 h-6 text-green-500 mb-2" />
                   <span className="text-xs font-medium dark:text-neutral-300">Node.js</span>
               </div>
-              <div className="flex flex-col items-center justify-center p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800 border border-neutral-100 dark:border-neutral-700 hover:border-yellow-500/50 transition-colors">
-                  <Zap className="w-6 h-6 text-yellow-500 mb-2" />
-                  <span className="text-xs font-medium dark:text-neutral-300">Bun</span>
+              <div className="flex flex-col items-center justify-center p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800 border border-neutral-100 dark:border-neutral-700 hover:border-blue-500/50 transition-colors">
+                  <Layers className="w-6 h-6 text-blue-500 mb-2" />
+                  <span className="text-xs font-medium dark:text-neutral-300">Docker</span>
               </div>
           </div>
       </div>
@@ -132,16 +156,20 @@ export const TechStack: React.FC = () => {
                 <div className="p-2 bg-cyan-100 dark:bg-cyan-500/10 rounded-lg text-cyan-600 dark:text-cyan-400">
                     <BrainCircuit size={20} />
                 </div>
-                <h3 className="text-lg font-bold text-neutral-900 dark:text-white">AI Developer with Documented Skills</h3>
+                <h3 className="text-lg font-bold text-neutral-900 dark:text-white">AI & Machine Learning</h3>
             </div>
             <p className="text-neutral-500 dark:text-neutral-400 mb-6 max-w-2xl leading-relaxed">
-                Building practical AI workflows, integrations, and tooling with modern model platforms and libraries.
+                RAG systems, multimodal models, local LLMs, and ML pipelines used across Note-Pilot, CareGraph, PitWolf, Trend Scout, and more.
             </p>
             <div className="flex flex-wrap gap-3">
                 <TechBadge icon={BrainCircuit} label="OpenAI" />
-                <TechBadge icon={Layers} label="Hugging Face Libraries" />
-                <TechBadge icon={Code} label="Claude Code" />
                 <TechBadge icon={Zap} label="Gemini" />
+                <TechBadge icon={Terminal} label="Ollama" />
+                <TechBadge icon={Layers} label="LangChain" />
+                <TechBadge icon={Database} label="FAISS" />
+                <TechBadge icon={Cpu} label="TensorFlow" />
+                <TechBadge icon={Cpu} label="PyTorch" />
+                <TechBadge icon={Layers} label="Hugging Face" />
             </div>
           </div>
       </div>
@@ -154,20 +182,22 @@ export const TechStack: React.FC = () => {
                         <Database size={24} />
                     </div>
                     <div>
-                        <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Data Management</h3>
-                        <p className="text-sm text-neutral-500 dark:text-neutral-400">Reliable storage and cloud solutions</p>
+                        <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Data & Cloud</h3>
+                        <p className="text-sm text-neutral-500 dark:text-neutral-400">Storage, auth, and hosting for production apps</p>
                     </div>
                </div>
                
                <div className="flex flex-wrap gap-3">
                     <TechBadge icon={Database} label="PostgreSQL" />
+                    <TechBadge icon={Database} label="Supabase" />
+                    <TechBadge icon={Database} label="SQLite" />
                     <TechBadge icon={Database} label="MongoDB" />
                     <TechBadge icon={Database} label="Redis" />
-                    <TechBadge icon={Server} label="AWS" />
-                    <TechBadge icon={Server} label="Azure" />
-                    <TechBadge icon={Server} label="GCP" />
                     <TechBadge icon={Server} label="Firebase" />
+                    <TechBadge icon={Cloud} label="Vercel" />
+                    <TechBadge icon={GitBranch} label="GitHub Actions" />
                     <TechBadge icon={Layers} label="Docker" />
+                    <TechBadge icon={Map} label="OpenStreetMap" />
                </div>
           </div>
       </div>

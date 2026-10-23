@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FileText, Send, Github, Linkedin, Mail, Database, Terminal, Layers, Coffee, Code, Globe, Award, Settings, Cpu, ArrowRight } from 'lucide-react';
+import { FileText, Send, Github, Linkedin, Mail, Database, Terminal, Layers, Smartphone, Code, Globe, Award, Settings, Cpu, ArrowRight } from 'lucide-react';
 import { MatrixText } from '../MatrixText';
 import { Section } from '../Section';
 import { ProjectCard } from '../ProjectCard';
@@ -125,11 +125,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
                </p>
                <div className="flex flex-wrap gap-3">
                   <SkillBadge icon={Cpu} name="React" />
-                  <SkillBadge icon={Layers} name="Next.js" />
-                  <SkillBadge icon={Terminal} name="DevOps" />
+                  <SkillBadge icon={Layers} name="TypeScript" />
+                  <SkillBadge icon={Terminal} name="Python" />
                   <SkillBadge icon={Database} name="Postgres" />
-                  <SkillBadge icon={Database} name="Firebase" />
-                  <SkillBadge icon={Coffee} name="Java" />
+                  <SkillBadge icon={Database} name="Supabase" />
+                  <SkillBadge icon={Smartphone} name="Flutter" />
                </div>
             </div>
          </div>
