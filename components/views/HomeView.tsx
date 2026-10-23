@@ -10,6 +10,7 @@ import { GitHubActivity } from '../GitHubActivity';
 import { ContactForm } from '../ContactForm';
 import { Badge, SocialLink, SkillBadge, ListItem } from '../Shared';
 import { projects } from '../../data';
+import profilePhoto from '../../Assests/Profile.jpeg';
 
 interface HomeViewProps {
   onNavigateToGears: () => void;
@@ -115,7 +116,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
       <Section id="about" title="About Me" subtitle="Personal">
          <div className="bg-white dark:bg-neutral-900/50 rounded-3xl p-8 border border-neutral-200 dark:border-neutral-800 flex flex-col md:flex-row gap-8 items-center shadow-sm">
             <div className="w-32 h-32 bg-yellow-400 shrink-0 rounded-2xl overflow-hidden border-4 border-neutral-100 dark:border-neutral-800 shadow-lg">
-               <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Akshit" alt="Akshit" className="w-full h-full object-cover" />
+               <img src={profilePhoto} alt="Akshit" className="w-full h-full object-cover object-[28%_20%]" />
             </div>
             <div className="flex-1">
                <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-3">Akshit Wadhwa</h3>

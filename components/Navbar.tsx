@@ -2,6 +2,7 @@ import React from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 import { NavItem } from '../types';
+import profilePhoto from '../Assests/Profile.jpeg';
 
 interface NavbarProps {
   darkMode: boolean;
@@ -15,8 +16,8 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme, navLinks 
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 dark:bg-neutral-950/80 border-b border-neutral-200 dark:border-neutral-800 h-16 flex items-center transition-colors duration-300">
       <div className="max-w-5xl mx-auto w-full px-4 md:px-8 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-yellow-400 rounded-lg border-2 border-neutral-900 overflow-hidden shadow-sm">
-            <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Akshit" alt="Icon" className="w-full h-full object-cover" />
+          <div className="w-8 h-8 bg-neutral-200 rounded-lg border-2 border-neutral-900 overflow-hidden shadow-sm">
+            <img src={profilePhoto} alt="Akshit Wadhwa" className="w-full h-full object-cover object-[28%_20%]" />
           </div>
           <span className="font-bold font-mono text-sm hidden sm:block tracking-tight text-neutral-900 dark:text-white">
             AKSHIT<span className="text-emerald-500">.DEV</span>
