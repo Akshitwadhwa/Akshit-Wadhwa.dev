@@ -49,14 +49,13 @@ export const projects: Project[] = [
     status: "Live"
   },
   {
-    title: "Pitwall Copilot",
-    description: "F1 pit-wall communication intelligence that turns driver/engineer radio into race-ready insights — team selection, cinematic cockpit UI, and concise pit commands with local fallback when the API is offline.",
-    tags: ["React", "JavaScript", "Vite", "Hugging Face", "Vercel"],
-    github: "https://github.com/Akshitwadhwa/Pitwall-Copilot",
-    link: "https://pitwall-copilot.vercel.app",
+    title: "PitWolf",
+    description: "F1 race-strategy engine that learns overtakes from historical data, models 2026 energy deployment, and replays completed races to recommend ATTACK, SAVE, DELAY, or BOX with explainable reasons.",
+    tags: ["JavaScript", "Python", "Telemetry", "ML"],
+    github: "https://github.com/Akshitwadhwa/PitWolf",
     imageUrl: "",
-    category: "F1 / AI",
-    status: "Live"
+    category: "F1 Strategy / ML",
+    status: "Development"
   },
   {
     title: "Note-Pilot AI",
@@ -75,15 +74,6 @@ export const projects: Project[] = [
     imageUrl: "",
     category: "AI & Healthcare",
     status: "Live"
-  },
-  {
-    title: "PitWolf",
-    description: "F1 race-strategy engine that learns overtakes from historical data, models 2026 energy deployment, and replays completed races to recommend ATTACK, SAVE, DELAY, or BOX with explainable reasons.",
-    tags: ["JavaScript", "Python", "Telemetry", "ML"],
-    github: "https://github.com/Akshitwadhwa/PitWolf",
-    imageUrl: "",
-    category: "F1 Strategy / ML",
-    status: "Development"
   },
   {
     title: "Trend Scout",
