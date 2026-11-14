@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePhoto from '../Assests/Profile.png';
+import profilePhoto from '../Assests/Profile.webp';
 
 export const PixelAvatar: React.FC = () => {
   return (
@@ -9,6 +9,8 @@ export const PixelAvatar: React.FC = () => {
             <img 
                 src={profilePhoto} 
                 alt="Akshit Wadhwa" 
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-cover object-[28%_20%] transform group-hover:scale-110 transition-transform duration-300"
             />
         </div>
