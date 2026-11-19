@@ -3,6 +3,8 @@ import { LucideIcon } from 'lucide-react';
 export interface Project {
   title: string;
   description: string;
+  goal?: string;
+  why?: string;
   tags: string[];
   link?: string;
   github?: string;

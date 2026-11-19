@@ -40,6 +40,40 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
+    title: "SideQuest — AI Builder Meetup",
+    description: "A people-finding layer for AI builder meetups and hackathons. Attendees create builder profiles, discover complementary teammates, and use a lightweight voice-led icebreaker to start useful conversations.",
+    goal: "Help builders find the right collaborators quickly, based on shared tools, interests, and goals.",
+    why: "Hackathons often lose time during team formation; SideQuest makes the first connection more intentional without managing the hackathon itself.",
+    tags: ["HTML", "CSS", "JavaScript", "Supabase", "PostgreSQL", "Edge Functions", "Vercel", "Luma"],
+    github: "https://github.com/Akshitwadhwa/Meetup-Project",
+    link: "https://sidequest-meetup.vercel.app",
+    imageUrl: "https://opengraph.githubassets.com/1/Akshitwadhwa/Meetup-Project",
+    category: "Community / Full Stack",
+    status: "Live"
+  },
+  {
+    title: "CyberRecon",
+    description: "An agentic, multi-agent cybersecurity investigation system that analyzes synthetic network, endpoint, and identity evidence, reconciles disagreements, and produces a cited incident assessment for a human analyst.",
+    goal: "Make security investigations explainable by forcing every conclusion to connect to evidence IDs in a local incident store.",
+    why: "Security teams need faster triage, but automated findings must remain auditable and should not take destructive actions on live systems.",
+    tags: ["Python", "SQLite", "CrewAI", "Google ADK", "FastAPI", "LiteLLM", "Agentic AI"],
+    github: "https://github.com/Akshitwadhwa/CyberRecon",
+    imageUrl: "https://opengraph.githubassets.com/1/Akshitwadhwa/CyberRecon",
+    category: "Cybersecurity / AI",
+    status: "Development"
+  },
+  {
+    title: "AI Codebase X-Ray",
+    description: "A repository intelligence tool that scans a public GitHub codebase, builds a structural graph, answers questions with file citations, reviews symbols and call relationships, and runs pytest checks against pull requests.",
+    goal: "Give developers a grounded map of an unfamiliar codebase instead of an uncited, name-only AI summary.",
+    why: "Understanding legacy or unfamiliar repositories is expensive; the project combines static analysis, retrieval, and test evidence to make code review more reliable.",
+    tags: ["Python", "FastAPI", "Tree-sitter", "NetworkX", "GitHub API", "RAG", "pytest"],
+    github: "https://github.com/Akshitwadhwa/AI-Codebase-X-Ray",
+    imageUrl: "https://opengraph.githubassets.com/1/Akshitwadhwa/AI-Codebase-X-Ray",
+    category: "Developer Tools / AI",
+    status: "Live"
+  },
+  {
     title: "BudgetGurugram",
     description: "Local-first editorial guide to affordable places, workspaces, events, and services in Gurugram — with MapLibre maps, live OpenStreetMap nearby pins, weather-aware tips, and auto-refreshed public events.",
     tags: ["JavaScript", "MapLibre", "OpenStreetMap", "Vercel", "GitHub Actions"],

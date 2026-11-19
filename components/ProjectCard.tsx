@@ -114,6 +114,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed line-clamp-3">
             {project.description}
           </p>
+          {project.goal && (
+            <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-500 leading-relaxed">
+              <span className="font-semibold text-neutral-700 dark:text-neutral-300">Goal:</span> {project.goal}
+            </p>
+          )}
+          {project.why && (
+            <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-500 leading-relaxed">
+              <span className="font-semibold text-neutral-700 dark:text-neutral-300">Why:</span> {project.why}
+            </p>
+          )}
         </div>
 
         {/* Technologies Section */}
