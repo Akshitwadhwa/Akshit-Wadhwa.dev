@@ -52,7 +52,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigateToGears, onNavigat
               </h2>
               
               <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl mb-10 mx-auto md:mx-0 text-lg">
-                I build interactive web apps using <Badge>TypeScript</Badge>, <Badge>React</Badge>, <Badge>Next.js</Badge>, and Mobile Dev using <Badge>Flutter</Badge>. With a focus on <strong className="text-neutral-900 dark:text-white">UI And Latest Interactive</strong> design. Enthusiastic about <strong className="text-neutral-900 dark:text-white">Software Development </strong>, <Badge>Driven by a keen eye for Saas based Application</Badge>
+                I build thoughtful digital products with <Badge>TypeScript</Badge>, <Badge>React</Badge>, <Badge>Next.js</Badge>, and <Badge>Flutter</Badge>. After working on new projects across AI, developer tooling, cybersecurity, and full-stack product development, my interests have grown beyond interfaces into building useful systems that are intelligent, reliable, and genuinely enjoyable to use.
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-12">
